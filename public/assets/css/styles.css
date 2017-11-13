@@ -1,191 +1,145 @@
-* {
-  margin: 0;
-}
+/* A Free Design by Bryant Smith (bryantsmith.com) */
 
-html, body {
-  height: 100%;
-}
 
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
-  font-size: 62.5%;
-  color: white;
-  background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
-}
 
 body {
-  font-size: 1.8rem;
-}
-
-h1, h2, h3 {
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -7rem;
-  position: relative;
-}
-
-footer, .push {
-  height: 7rem;
-}
-
-footer .footer-contents {
-  padding: 0 5rem;
-  position: relative;
-}
-
-.website-nav {
-  position: relative;
-  padding: 5rem;
-}
-
-.website-nav ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  text-align: left;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #061C37;
+  background: #EEEFE4;
+  background-image:url(../images/background.png);
+  background-repeat:repeat-x;
 }
+*
+{
+  margin: 0 auto 0 auto;
+  text-align:left;}
 
-.website-nav ul li {
-  float: left;
-  padding: 0.5rem 2rem 0.5rem 0;
-  line-height: 21px;
-}
-
-.website-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.home-link {
-  font-weight: bold;
-}
-
-.message {
+#container
+{
+  display: block;
+  height:auto;
   position: relative;
-  padding: 0 5rem;
-  margin-bottom: 3rem;
-  width: auto;
+  width: 940px;
 }
 
-.message .twitter-link {
+#mainpic h1
+{
+  position:absolute;
+  text-align:right;
+  color:#F8FDEE;
+  font-size:30px;
+  color:#FFF;
+  left:60px;
+  top:20px;
+}
+
+
+#mainpic h2
+{
+  position:absolute;
+  text-align:right;
+  color:#E1E7F7;
+  left:60px;
+  top:50px;
+}
+
+#mainpic
+{
+  background-image:url(../images/main.jpg);
+  background-repeat:no-repeat;
+  width:900px;
+  height:354px;
+}
+
+
+
+.off
+{
+  color:#3A6028;
+
+}
+
+
+
+
+#menu
+{
+  background-image:url(../images/menu.png);
+  background-repeat:no-repeat;
+  width:940px;
+  height:69px;
+  float:left;
+  clear:both;
+}
+
+#content
+{
+  width:880px;
+  height:auto;
+  background-color:#FFF;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:5px;
+}
+
+#footer
+{
+  width:inherit;
+  height:auto;
+}
+
+#footer h3 a,#footer h3 a:visited
+{
+  display:inline;
+  text-align:center;
+  font-size:12px;
+  text-decoration:none;
+  color:#7198E1;
+}
+
+
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  margin-left:auto;
+  width:900px;
+}
+
+#menu li {
+  list-style: none;
+  padding: 0px;
+  display: inline;
+
+}
+
+#menu a {
   float: left;
-  margin-right: 20px;
-}
-
-.message .twitter-link img {
-  width: 40px;
+  width: 150px;
   height: 40px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 17px;
+  font-size: 15px;
 }
 
-.message .text {
-  float: left;
+#menu a:hover{
+  color:#BEE399;
 }
 
-.message:after, .website-nav:after {
-  content: " ";
-  display: table;
-  clear: both;
+#content p
+{
+
 }
 
-.graphics {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 0;
+
+html, body {
+  text-align: center;
 }
-
-.graphics .tower svg {
-  width: calc(100vw);
-  height: calc(90vh);
-}
-
-.graphics .cloud {
-  top: 30rem;
-  position: relative;
-}
-
-.page-content {
-  padding: 1rem 5rem;
-}
-
-.page-content p {
-  margin-bottom: 1rem;
-}
-
-.path {
-  stroke-dasharray: 4000;
-  stroke-dashoffset: 4000;
-  animation: dash 5s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@media (min-height: 500px) and (min-width: 700px) {
-  .message {
-    padding: 0;
-    width: 50%;
-    left: calc(50vw - 5rem);
-    top: calc(15vh - 5rem);
-  }
-
-  .message .text {
-    padding-right: 0rem;
-  }
-
-  .graphics {
-    display: block;
-    margin-bottom: 6rem;
-  }
-
-  .message .twitter-link img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .page-content {
-    padding: 3rem 5rem;
-  }
-}
-
-@media (min-height: 500px) and (min-width: 1240px) {
-  .message {
-    left: calc(50vw - 10rem);
-    top: calc(25vh - 5rem);
-  }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  .message .twitter-link img {
-    width: 80%;
-    height: 80%;
-  }
-}
-
-@media (min-aspect-ratio: 11/5)  {
-  .graphics {
-    display: none;
-  }
-}
+p {text-align: left;}
