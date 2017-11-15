@@ -1,6 +1,3 @@
-/* A Free Design by Bryant Smith (bryantsmith.com) */
-
-
 
 body {
   margin: 0;
@@ -86,49 +83,6 @@ body {
   padding-bottom:5px;
 }
 
-#footer
-{
-  width:inherit;
-  height:auto;
-}
-
-#footer h3 a,#footer h3 a:visited
-{
-  display:inline;
-  text-align:center;
-  font-size:12px;
-  text-decoration:none;
-  color:#7198E1;
-}
-
-
-#menu ul {
-  list-style: none;
-  padding: 0px;
-  margin-left:auto;
-  width:900px;
-}
-
-#menu li {
-  list-style: none;
-  padding: 0px;
-  display: inline;
-
-}
-
-#menu a {
-  float: left;
-  width: 150px;
-  height: 40px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  padding-top: 17px;
-  font-size: 15px;
-}
-
 #menu a:hover{
   color:#BEE399;
 }
@@ -143,3 +97,35 @@ html, body {
   text-align: center;
 }
 p {text-align: left;}
+
+.container {
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  background: #F7F7F7;
+}
+
+.container input[type="text"] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+}
+
+.container input[type="text"]:focus {
+  box-shadow: 0 0 5px #43D1AF;
+  padding: 3%;
+  border: 1px solid #43D1AF;
+}

@@ -3,22 +3,34 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <title>NightBeach | florida web design</title>
+    <title>Epoch Converter</title>
 </head>
 
 <body>
+
 <div id="container">
     <div id="mainpic">
-        <h1>Green<span class="off">Mountain</span></h1>
-        <!-- A template by Bryant Smith -->
-    </div>
+        <h1>Epoch<span class="off">Converter</span></h1>
+        <br/><br/><br/><br/>
+        <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am bad with UI, please bear with this. Will be improved in future.</b></p>
+</div>
 
     <div id="content">
-
-
-        <!-- Leaving the template credits as requested. -->
-        <div id="footer"><h3>Template credits: <a href="http://www.bryantsmith.com">florida web design</a></div>
+        <table class="tool">
+            <tbody><tr>
+                <td>Yr <a href="/site/preferences" title="Update your preferences"><i class="fa fa-cog" aria-hidden="true"></i></a></td><td>Mon</td><td>Day</td></tr><tr><td>
+                <input class="dateform year" type="text" id="year" size="4" maxlength="4" value="2012" name="yyyy">&nbsp;-&nbsp;</td>
+                <td><input class="dateform" type="text" id="mm" size="2" maxlength="2" value="1" name="mm">&nbsp;-&nbsp;</td>
+                <td><input class="dateform" type="text" size="2" maxlength="2" value="1" name="dd" id="dd">&nbsp;&nbsp;&nbsp;</td>
+            </tr></tbody>
+        </table>
+        <div style="text-align:center">
+            <a id="evaluate" onclick="evaluateMe();" href="javascript:void(0);" title="Evaluate">Evaluate</a>
+            <br/>Timestamp in milliseconds<p id="mytext" align="center"></p>
+            Epoch timestamp<p id="mytext2" align="center"></p>
+        </div>
     </div>
 </div>
+<script src="assets/js/set-background.js"></script>
 </body>
 </html>
